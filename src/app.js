@@ -21,6 +21,6 @@ app.use(cors())
 app.use('/auth', authRoutes)
 
 //inicio del servidor
-app.listen(app.get('port'),()=>{
+app.listen(app.get('port'), ()=>{
     console.log('server Running')
 })
