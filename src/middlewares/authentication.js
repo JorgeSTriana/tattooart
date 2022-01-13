@@ -10,7 +10,7 @@ const Authorized = (req, res, next)=>{
         req.body.user = decoded
         next()
     }catch (error){
-        res.status(405).json({msg: 'Invalid token'})
+        res.status(401).json({msg: 'Invalid token'})
     }
 }
 
