@@ -33,6 +33,7 @@ const authService = {
             await userData.save()
             let token = await this.signToken(userData._id)
             return{
+                userData,
                 code : 200,
                 token
             }
